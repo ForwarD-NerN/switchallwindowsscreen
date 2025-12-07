@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Name": "Switch the screen of all windows",
+        "Description": "Switch the screen of all windows",
+        "Icon": "preferences-system-windows",
+        "Authors": [
+            {
+                "Email": "jmillan@kde-espana.org",
+                "Name": "José Millán Soto"
+            }
+        ],
+        "Id": "switchallwindowsscreen",
+        "Version": "0.2",
+        "License": "GPL",
+        "Website": "https://invent.kde.org/millansoto/switchallwindowsscreen"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}
