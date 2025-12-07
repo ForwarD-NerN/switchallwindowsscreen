@@ -12,7 +12,7 @@
         "Id": "switchallwindowsscreen",
         "Version": "0.2",
         "License": "GPL",
-        "Website": "https://invent.kde.org/millansoto/switchallwindowsscreen"
+        "Website": "https://github.com/ForwarD-NerN/switchallwindowsscreen"
     },
     "X-Plasma-API": "javascript",
     "X-Plasma-MainScript": "code/main.js",
