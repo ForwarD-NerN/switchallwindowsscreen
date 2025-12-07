@@ -1,4 +1,5 @@
 # switchallwindowsscreen
+This Kwin script allows you to cycle all windows between screens with a hotkey. Windows on virtual desktop are also cycled.
 
 This is an updated version of [switchallwindowsscreen](https://invent.kde.org/millansoto/switchallwindowsscreen).<br>
 It also includes [this](https://invent.kde.org/millansoto/switchallwindowsscreen/-/merge_requests/1) merge request.
