@@ -1,10 +1,9 @@
 /*
- K Win script to switch the screen of all windows                                                                    *
+ KWin script to switch the screen of all windows                                                                    *
 
  SPDX-FileCopyrightText: 2021 José Millán Soto <jmillan@kde-espana.org>
-
  SPDX-License-Identifier: GPL-2.0-or-later
- */
+*/
 
 // QRect::contains seems not to work in JS
 function contains(area, x, y) {
@@ -13,10 +12,10 @@ function contains(area, x, y) {
 
 function detectScreen(client, screenAreas) {
     /* Returns the screen in which a client is placed, it will consider that the window
-     *       is located in an screen where the top left corner of the window is located. Should
-     *       the top left corner not be located on any string, it will try to locate if the
-     *       bottom right corner is located in a screen.
-     *       If no screen can be detected, null will be returned. */
+           is located in an screen where the top left corner of the window is located. Should
+           the top left corner not be located on any string, it will try to locate if the
+           bottom right corner is located in a screen.
+           If no screen can be detected, null will be returned. */
     var clientPosition = client.clientGeometry;
 
     var x = (clientPosition.right - clientPosition.left) / 2 + clientPosition.left
@@ -34,7 +33,6 @@ function detectScreen(client, screenAreas) {
 
 function switchAllWindowsScreen() {
     try {
-        console.debug("Hello world");
         var allWindows = workspace.stackingOrder;
         var screenAreas = [];
 
@@ -44,7 +42,7 @@ function switchAllWindowsScreen() {
 
         for (var i = 0; i < allWindows.length; i++) {
             var client = allWindows[i];
-            console.debug("A");
+
             if (client.moveableAcrossScreens) {
                 var screen = detectScreen(client, screenAreas);
                 if (screen != null) {
