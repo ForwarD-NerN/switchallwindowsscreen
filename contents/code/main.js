@@ -18,8 +18,8 @@ function detectScreen(client, screenAreas) {
            If no screen can be detected, null will be returned. */
     var clientPosition = client.clientGeometry;
 
-    var x = (clientPosition.right - clientPosition.left) / 2 + clientPosition.left
-    var y = (clientPosition.bottom - clientPosition.top) / 2 + clientPosition.top
+    var x = clientPosition.x + clientPosition.width / 2;
+    var y = clientPosition.y + clientPosition.height / 2;
 
     for (var i = 0; i < screenAreas.length; i++) {
         if (contains(screenAreas[i], x, y)) {
